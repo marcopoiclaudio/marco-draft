@@ -10,12 +10,12 @@ button.addEventListener('click', function(e){
 function checkPw() {
   console.log(input.value);
 
-  if (input.value == "Conor is the best") {
+  if (input.value == "passeggiami") {
       errorMessage.innerHTML = "Well done you got it correct!";
 
       setTimeout(changeThePage(), 30000);
   } else {
-    errorMessage.innerHTML = "Nope you got it wrong, you probably thought Marco was the best :(";
+    errorMessage.innerHTML = "You meant Conor is a twat";
   };
 };
 
