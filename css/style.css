@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/blu7vsd.css");
+
+h1 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 92px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #3ed0d0;
+  margin-bottom: 0px;
+
+}
+
+.header {
+
+}
+
+.topnav {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .05em;
+  color: #222;
+  text-decoration: none;
+  padding: 30px 0px 0px 50px;
+}
+
+ul {
+list-style-type: none;
+margin: auto;
+padding: 0px 0px;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+font-family: aktiv-grotesk, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+text-decoration: none;
+color: #222;
+padding: 0px 20px;
+}
+
+li a:hover {
+/* display: inline; */
+font-family: aktiv-grotesk, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+text-decoration: underline;
+color: #222;
+padding: 0px 20px;
+text-align: center;
+}
+
+.index {
+  justify-content: center;
+  display: flex;
+  margin-top: 130px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 10% 0% 10%;
+  margin: 0;
+
+}
