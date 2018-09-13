@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/blu7vsd.css");
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: adobe-garamond-pro, serif;
   font-style: normal;
@@ -10,6 +14,58 @@ h1 {
   text-align: center;
   color: #3ed0d0;
   margin-bottom: 0px;
+
+}
+
+h2 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #222;
+  margin-bottom: 0px;
+
+}
+
+h3 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #222;
+  margin: 15px 0px 0px 0px;
+
+}
+
+h4 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #333;
+  margin: auto;
+
+}
+
+p {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -.01em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #222;
+  margin: 15px 0px 0px 0px;
 
 }
 
@@ -29,6 +85,10 @@ h1 {
 
 .topnav a {
     text-decoration: none;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
 }
 
 .topnav a:visited {
@@ -75,10 +135,180 @@ text-align: center;
   margin-top: 130px;
 }
 
+.index-year {
+  justify-content: center;
+  display: flex;
+  margin-top: 0px;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
   padding: 6% 10% 0% 10%;
   margin: 0;
+}
 
+.wrap-year {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 10% 0% 10%;
+  margin: 0px 0 80px 0;
+}
+
+.title {
+  margin: 75px 0px 0px 0px;
+}
+
+.hero-wrap{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 50px 0px 0px 0px;
+}
+
+.hero-image{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2013/gasometro.jpg");
+  background-position: top;
+  background-size: cover;
+  margin: auto;
+}
+
+.hero-image-2014{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2014/petini.png");
+  background-position: top;
+  background-size: cover;
+  margin: auto;
+}
+
+.paragraph {
+  margin: 80px auto 80px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  /* margin-top: 30px;
+  margin-bottom: 80px; */
+}
+
+.gallery-double {
+  display: flex;
+  margin: 0;
+  height: 1030px;
+}
+
+.gallery-single {
+  display: flex;
+  margin: 0;
+  height: 515px;
+}
+
+.column-outer {
+  width: 25%;
+}
+
+.column-middle {
+  width: 51%;
+  margin: 0px 15px;
+}
+
+.column-single {
+  width: 25%;
+  margin: 0px 15px 0 0;
+}
+
+.column-left {
+  width: 50%;
+  margin: 0px 15px 0 0;
+}
+
+.column-right {
+  width: 50%;
+  margin: 0;
+}
+
+.outer-images {
+  background-image: url("../images/home.png");
+  width: 100%;
+  height: 500px;
+  margin-bottom: 15px;
+}
+
+
+/* .inner-images {
+  background-image: url('https://source.unsplash.com/random');
+  width: 100%;
+  height: 1015px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.image-2013-1 {
+background-image: url("../images/2013/first-message.png") !important;
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2013-2 {
+background-image: url("../images/2013/first-pic.jpg") !important;
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2013-3 {
+background-image: url("../images/2013/dress.jpg") !important;
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2013-4 {
+background-image: url("../images/2013/treni.jpg") !important;
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2013-5 {
+background-image: url("../images/2013/mirror.jpg") !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-6 {
+background-image: url("../images/2013/cramps.png") !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-7 {
+background-image: url("../images/2013/webcam1.jpg") !important;
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
+}
+
+.image-2013-8 {
+background-image: url("../images/2013/home.png") !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-9 {
+background-image: url("../images/2013/webcam2.jpg") !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
