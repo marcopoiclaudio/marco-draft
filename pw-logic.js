@@ -11,11 +11,11 @@ function checkPw() {
   console.log(input.value);
 
   if (input.value == "passeggiami") {
-      errorMessage.innerHTML = "Well done you got it correct!";
+      errorMessage.innerHTML = "Siiiiiiiii!";
 
       setTimeout(changeThePage(), 30000);
   } else {
-    errorMessage.innerHTML = "You meant Conor is a twat";
+    errorMessage.innerHTML = "Tu sbaglia tu uccide i petini";
   };
 };
 
