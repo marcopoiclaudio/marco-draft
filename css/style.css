@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+.bg{
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
 h1 {
   font-family: adobe-garamond-pro, serif;
   font-style: normal;
@@ -69,8 +74,27 @@ p {
 
 }
 
+#error-message {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: red;
+  margin-top: 80px;
+
+}
+
 .header {
 
+}
+
+.brocolli {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
 }
 
 .topnav {
@@ -129,10 +153,19 @@ padding: 0px 20px;
 text-align: center;
 }
 
+.current {
+  opacity: 0.3;
+}
+
+.current:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .index {
   justify-content: center;
   display: flex;
-  margin-top: 130px;
+  margin-top: 170px;
 }
 
 .index-year {
@@ -144,7 +177,7 @@ text-align: center;
 .wrap {
   display: flex;
   flex-direction: column;
-  padding: 6% 10% 0% 10%;
+  padding: 4% 10% 0% 10%;
   margin: 0;
 }
 
@@ -188,6 +221,51 @@ text-align: center;
   margin: auto;
 }
 
+.hero-image-2015{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2015/casa4.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.hero-image-2016{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2016/piumoso.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.hero-image-2017{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2017/capodanno.jpg");
+  background-position: bottom;
+  background-size: cover;
+  margin: auto;
+}
+
+.hero-image-2018{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 650px;
+  background-image: url("../images/2018/pollok.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
 .paragraph {
   margin: 80px auto 80px auto;
   display: flex;
@@ -210,6 +288,10 @@ text-align: center;
   height: 515px;
 }
 
+.future {
+  margin-top: 50px;
+}
+
 .column-outer {
   width: 25%;
 }
@@ -219,19 +301,34 @@ text-align: center;
   margin: 0px 15px;
 }
 
+.column-full {
+  width: 100%;
+  margin: 0;
+}
+
 .column-single {
   width: 25%;
   margin: 0px 15px 0 0;
 }
 
 .column-left {
-  width: 50%;
+  width: 51%;
   margin: 0px 15px 0 0;
 }
 
 .column-right {
-  width: 50%;
+  width: 51%;
   margin: 0;
+}
+
+.column-left-75 {
+  width: 77%;
+  margin: 0px 15px 0 0;
+}
+
+.column-right-75 {
+  width: 77%;
+  margin: 0px 0px 0 15px;
 }
 
 .outer-images {
@@ -242,72 +339,862 @@ text-align: center;
 }
 
 
-/* .inner-images {
-  background-image: url('https://source.unsplash.com/random');
-  width: 100%;
-  height: 1015px;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
+/*
+
+Input field ----------------
+
+*/
+
+.pw-input-wrap {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px #ddd solid;
+  height: 40px;
+  width: 300px;
+  font-size: 24px;
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  colour: #ddd;
+}
+
+.input:hover {
+  cursor: text;
+  /* opacity: 0.5;
+  border-color: #3ed0d0; */
+  transition: ease-in-out 300ms;
+}
+
+.input:focus {
+  outline-width: 0;
+  border-color: #333;
+  cursor: text;
+  color: 222;
+}
+
+.btn {
+  align-items: center;
+  border-color: none;
+  height: 36px;
+  width: 80px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 2px;
+  background-color: #3ed0d0;
+  color: #222;
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  transition: ease-in-out 300ms;
+  cursor: pointer;
+}
+
+
+
+/*
+
+Gallery images 2013 ----------------
+
+*/
 
 .image-2013-1 {
-background-image: url("../images/2013/first-message.png") !important;
+background-image: url("../images/2013/first-message-alt.png");
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 }
 
 .image-2013-2 {
-background-image: url("../images/2013/first-pic.jpg") !important;
+background-image: url("../images/2013/first-pic.jpg");
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 }
 
 .image-2013-3 {
-background-image: url("../images/2013/dress.jpg") !important;
+background-image: url("../images/2013/dress.jpg");
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 }
 
 .image-2013-4 {
-background-image: url("../images/2013/treni.jpg") !important;
+background-image: url("../images/2013/treni.jpg");
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 }
 
 .image-2013-5 {
-background-image: url("../images/2013/mirror.jpg") !important;
+background-image: url("../images/2013/ciccini.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
 
 .image-2013-6 {
-background-image: url("../images/2013/cramps.png") !important;
+background-image: url("../images/2013/cramps.png");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
 
 .image-2013-7 {
-background-image: url("../images/2013/webcam1.jpg") !important;
+background-image: url("../images/2013/mirror.jpg");
 background-size: cover;
 background-position: right;
 background-repeat: no-repeat;
 }
 
 .image-2013-8 {
-background-image: url("../images/2013/home.png") !important;
+background-image: url("../images/2013/home.png");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
 
 .image-2013-9 {
-background-image: url("../images/2013/webcam2.jpg") !important;
+background-image: url("../images/2013/webcam2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-10 {
+background-image: url("../images/2013/morning.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-11 {
+background-image: url("../images/2013/webcam1.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-12 {
+background-image: url("../images/2013/citello.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-13 {
+background-image: url("../images/2013/grazioso.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-14 {
+background-image: url("../images/2013/mirror2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2013-15 {
+background-image: url("../images/2013/walt.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2014 ----------------
+
+*/
+
+.image-2014-1 {
+background-image: url("../images/2014/selfie.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-2 {
+background-image: url("../images/2014/calzoleria.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-3 {
+background-image: url("../images/2014/manette.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-4 {
+background-image: url("../images/2014/berlin-selfie.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-5 {
+background-image: url("../images/2014/scaletta.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-6 {
+background-image: url("../images/2014/praga.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-7 {
+background-image: url("../images/2014/piedini.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-8 {
+background-image: url("../images/2014/zoo.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-9 {
+background-image: url("../images/2014/mice.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2014-10 {
+background-image: url("../images/2014/stanza.jpg");
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.image-2014-11 {
+background-image: url("../images/2014/berlin.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-12 {
+background-image: url("../images/2014/calzoleria2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-13 {
+background-image: url("../images/2014/capanno.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-14 {
+background-image: url("../images/2014/mirror4.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-15 {
+background-image: url("../images/2014/polaroid.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-16 {
+background-image: url("../images/2014/selfie3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-17 {
+background-image: url("../images/2014/mirror3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-18 {
+background-image: url("../images/2014/selfie2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-19 {
+background-image: url("../images/2014/fuga.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2014-20 {
+background-image: url("../images/2014/berlin-cafe.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2015 ----------------
+
+*/
+
+.image-2015-1 {
+background-image: url("../images/2015/casa.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-2 {
+background-image: url("../images/2015/selfie.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-3 {
+background-image: url("../images/2015/tatuaggi.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-4 {
+background-image: url("../images/2015/casa2.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-5 {
+background-image: url("../images/2015/ascensore.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-6 {
+background-image: url("../images/2015/stoccolma2.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-7 {
+background-image: url("../images/2015/casa3.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-8 {
+background-image: url("../images/2015/picnic.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2015-9 {
+background-image: url("../images/2015/polaroid.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2015-10 {
+background-image: url("../images/2015/fao.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-11 {
+background-image: url("../images/2015/olanda.png");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-12 {
+background-image: url("../images/2015/scontrino.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-13 {
+background-image: url("../images/2015/santa.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-14 {
+background-image: url("../images/2015/laghetto.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-15 {
+background-image: url("../images/2015/hug.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-16 {
+background-image: url("../images/2015/casa5.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-17 {
+background-image: url("../images/2015/stoccolma.png");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2015-18 {
+background-image: url("../images/2015/pecora.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2015-19 {
+background-image: url("../images/2015/casa6.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2016 ----------------
+
+*/
+
+.image-2016-1 {
+background-image: url("../images/2016/polaroid.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-2 {
+background-image: url("../images/2016/colazione.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-3 {
+background-image: url("../images/2016/totti.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-4 {
+background-image: url("../images/2016/casa.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-5 {
+background-image: url("../images/2016/snapchat.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2016-6 {
+background-image: url("../images/2016/festa.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-7 {
+background-image: url("../images/2016/toscana.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-8 {
+background-image: url("../images/2016/gravina.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-9 {
+background-image: url("../images/2016/varsavia.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-10 {
+background-image: url("../images/2016/toscana2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-11 {
+background-image: url("../images/2016/disegno.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2016-12 {
+background-image: url("../images/2016/auconi.png");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2016-13 {
+background-image: url("../images/2016/ritratto.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2016-14 {
+background-image: url("../images/2016/scoiattolo.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-15 {
+background-image: url("../images/2016/toscana3.jpg");
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
+}
+
+.image-2016-16 {
+background-image: url("../images/2016/anello.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2016-17 {
+background-image: url("../images/2016/varsavia2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2017 ----------------
+
+*/
+
+.image-2017-1 {
+background-image: url("../images/2017/ascensore.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-2 {
+background-image: url("../images/2017/mirror.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-3 {
+background-image: url("../images/2017/submarine.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-4 {
+background-image: url("../images/2017/visegrad.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-5 {
+background-image: url("../images/2017/dinosauro.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-6 {
+background-image: url("../images/2017/fungo.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-7 {
+background-image: url("../images/2017/altalena.gif");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-8 {
+background-image: url("../images/2017/bradipo2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-9 {
+background-image: url("../images/2017/mare.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-9bis {
+background-image: url("../images/2017/selfie4.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-2017-10 {
+background-image: url("../images/2017/selfie3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-11 {
+background-image: url("../images/2017/selfie.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-12 {
+background-image: url("../images/2017/piscina.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-13 {
+background-image: url("../images/2017/selfie2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-14 {
+background-image: url("../images/2017/porcellino.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-15 {
+background-image: url("../images/2017/matrimonio.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-16 {
+background-image: url("../images/2017/momi.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-17 {
+background-image: url("../images/2017/terme.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+.image-2017-18 {
+background-image: url("../images/2017/nevache.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2017-19 {
+background-image: url("../images/2017/panchina.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2018 ----------------
+
+*/
+
+.image-2018-1 {
+background-image: url("../images/2018/prato.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-2 {
+background-image: url("../images/2018/langos.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-3 {
+background-image: url("../images/2018/bolle2.gif");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-4 {
+background-image: url("../images/2018/ascensore.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-5 {
+background-image: url("../images/2018/balletto.gif");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-6 {
+background-image: url("../images/2018/prater.jpg");
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.image-2018-7 {
+background-image: url("../images/2018/selfie3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-8 {
+background-image: url("../images/2018/hug.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-9 {
+background-image: url("../images/2018/foto.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-10 {
+background-image: url("../images/2018/compleanno.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-11 {
+background-image: url("../images/2018/selfie.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-12 {
+background-image: url("../images/2018/torino.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-13 {
+background-image: url("../images/2018/sorpresa.gif");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-14 {
+background-image: url("../images/2018/selfie2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-15 {
+background-image: url("../images/2018/langos3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*
+
+Gallery images 2019 ----------------
+
+*/
+
+.image-future-1 {
+background-image: url("../images/2019/bombolotti.jpg");
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+.image-future-2 {
+background-image: url("../images/2019/wedding.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
