@@ -1198,3 +1198,150 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
+
+.image-future-3 {
+background-image: url("../images/2019/brocolli.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-4 {
+background-image: url("../images/2019/cacatua.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-5 {
+background-image: url("../images/2019/albino.jpg");
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.image-future-6 {
+background-image: url("../images/2019/petini.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-7 {
+background-image: url("../images/2019/paperotti.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-8 {
+background-image: url("../images/2019/hannibal.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+.image-future-9 {
+background-image: url("../images/2019/maialino.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+.image-future-10 {
+background-image: url("../images/2019/schnauzer.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-11 {
+background-image: url("../images/2019/pecora.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-12 {
+background-image: url("../images/2019/riccio.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-13 {
+background-image: url("../images/2019/mucca.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-14 {
+background-image: url("../images/2019/alpaca.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-15 {
+background-image: url("../images/2019/ciaomomi.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-16 {
+background-image: url("../images/2019/procione.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-17 {
+background-image: url("../images/2019/langos.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-18 {
+background-image: url("../images/2019/capybara.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-future-19 {
+background-image: url("../images/2019/gerboa.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* .overlay {
+    position: relative;
+}
+
+.overlay::before {
+    background-image: linear-gradient( top,
+            rgba( 255, 255, 255, 0 ) 20%,
+            rgba( 255, 255, 255, 1 ) 100% );
+        background-image: -moz-linear-gradient( top,
+            rgba( 255, 255, 255, 0 ) 20%,
+            rgba( 255, 255, 255, 1 ) 100% );
+        background-image: -ms-linear-gradient( top,
+            rgba( 255, 255, 255, 0 ) 20%,
+            rgba( 255, 255, 255, 1 ) 100% );
+        background-image: -o-linear-gradient( top,
+            rgba( 255, 255, 255, 0 ) 20%,
+            rgba( 255, 255, 255, 1 ) 100% );
+        background-image: -webkit-linear-gradient( top,
+            rgba( 255, 255, 255, 0 ) 20%,
+            rgba( 255, 255, 255, 1 ) 100% );
+    content: "\00a0";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+} */
