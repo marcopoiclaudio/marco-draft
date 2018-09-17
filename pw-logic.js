@@ -11,6 +11,7 @@ function checkPw() {
   console.log(input.value);
 
   if (input.value == "passeggiami") {
+      errorMessage.style.color = "green";
       errorMessage.innerHTML = "Siiiiiiiii!";
       localStorage.setItem("auth", true);
 
