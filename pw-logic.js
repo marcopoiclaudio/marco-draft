@@ -25,3 +25,12 @@ url = window.location.href;
 url = url.replace(/\/[^\/]*$/, '/index.html');
 window.location.href = url;
 };
+
+
+input.addEventListener("keyup", function(e){
+  e.preventDefault();
+
+  if (event.keyCode === 13) {
+    checkPw();
+  };
+});
