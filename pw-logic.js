@@ -23,7 +23,7 @@ function checkPw() {
 
 function changeThePage() {
 url = window.location.href;
-url = url.replace(/\/[^\/]*$/, '/index.html');
+url = url.replace(/\/[^\/]*$/, '/home.html');
 window.location.href = url;
 };
 

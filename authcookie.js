@@ -2,7 +2,7 @@ window.onload = checkForCookie();
 
 function changeThePage() {
   url = window.location.href;
-  url = url.replace(/\/[^\/]*$/, '/splash.html');
+  url = url.replace(/\/[^\/]*$/, '/index.html');
   window.location.href = url;
 };
 
