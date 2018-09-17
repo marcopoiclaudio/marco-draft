@@ -12,6 +12,7 @@ function checkPw() {
 
   if (input.value == "passeggiami") {
       errorMessage.innerHTML = "Siiiiiiiii!";
+      localStorage.setItem("auth", true);
 
       setTimeout(changeThePage(), 30000);
   } else {
