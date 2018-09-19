@@ -1173,6 +1173,27 @@ background-repeat: no-repeat;
 }
 
 .image-2018-15 {
+background-image: url("../images/2018/divano.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-16 {
+background-image: url("../images/2018/panda.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-17 {
+background-image: url("../images/2018/sushi.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.image-2018-18 {
 background-image: url("../images/2018/langos3.jpg");
 background-size: cover;
 background-position: center;
