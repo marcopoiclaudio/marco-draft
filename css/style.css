@@ -346,16 +346,26 @@ text-align: center;
   height: 150px;
   position: fixed;
   bottom: 0;
-  float: left;
+  left: 0;
 }
 
 .petino{
   background-image: url("../images/petino.png");
   background-size: cover;
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
   position: fixed;
   top: 0;
+  right: 0;
+}
+
+.brocolli{
+  background-image: url("../images/brocolli.png");
+  background-size: cover;
+  width: 230px;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
   right: 0;
 }
 
