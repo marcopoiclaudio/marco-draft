@@ -1,7 +1,6 @@
 var bee = document.getElementById("bee");
    document.addEventListener("mousemove", getMouse);
 
-
    bee.style.position = "absolute"; //css
    var beepos = {x:0, y:0};
 
@@ -11,6 +10,9 @@ var bee = document.getElementById("bee");
 
    var dir = "right";
    function getMouse(e){
+     var image = document.getElementById('bird-image');
+
+     image.src = "http://i64.tinypic.com/350s181.png";
      mouse.x = e.pageX;
      mouse.y = e.pageY;
        //Checking directional change
@@ -42,3 +44,43 @@ var bee = document.getElementById("bee");
        }
 
    }
+
+   document.onmousemove = (function() {
+     var image = document.getElementById('bird-image');
+
+    var onmousestop = function() {
+            $("#bird-image").fadeOut("fast");
+          setTimeout(function(){
+            $("#bird-image").fadeIn("fast");
+            image.src = "images/still-cockatoo.png";
+          }, 150);
+
+    }, thread;
+
+    return function() {
+      clearTimeout(thread);
+      thread = setTimeout(onmousestop, 300);
+    };
+  })();
+
+
+
+
+// var myListener = function () {
+//     // document.removeEventListener('mousemove', myListener, false);
+//     console.log("poop")
+//     var poop = "poop";
+//     checkforpoop(poop);
+// };
+//
+// function checkforpoop() {
+//   if (poop == "poop") {
+//     console.log("mouse is moving");
+//     var poop = "nopoop";
+//   } else {
+//     console.log("Mouse is stopped");
+//   }
+// };
+//
+//
+// document.addEventListener('mousemove', myListener, true);
