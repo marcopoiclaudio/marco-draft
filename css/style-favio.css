@@ -180,25 +180,86 @@ text-decoration: underline;
   right: 0;
 }
 
+@media only screen and (max-width: 400px) {
+  .london{
+    background-image: url("../images/london.png");
+    background-size: cover;
+    width: 120px;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
 
+  .mug{
+    background-image: url("../images/mug.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 
-.left {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+  .cph{
+    background-image: url("../images/cph.png");
+    background-size: cover;
+    width: 120px;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 20% 5% 0% 5%;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: -.01em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #A19B4E;
+    margin-bottom: 0px;
+
+  }
+
+  li a {
+  display: block;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #FF00E4;
+  padding: 0px 20px;
+  }
+
+  li a:hover {
+  text-decoration: underline;
+  }
+
+  .index {
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .topnav {
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .05em;
+    color: #222;
+    padding: 30px 0px 0px 30px;
+  }
+
 }
-.right {
-        -moz-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-}
-
-/* #bee {
-  transition: transform 0.3s;
-} */
