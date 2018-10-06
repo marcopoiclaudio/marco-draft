@@ -57,7 +57,6 @@ h4 {
   text-align: center;
   color: #333;
   margin: auto;
-
 }
 
 h5 {
@@ -70,7 +69,18 @@ h5 {
   text-align: center;
   color: #222;
   margin-bottom: 0px;
+}
 
+h6 {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -.01em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #fff;
+  margin: auto;
 }
 
 p {
@@ -228,6 +238,16 @@ text-align: center;
   margin-top: 0px;
 }
 
+.bonus {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .05em;
+  color: #222;
+  padding: 30px 0px 0px 50px;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -240,6 +260,10 @@ text-align: center;
   flex-direction: column;
   padding: 10%;
   margin: 0px 0 0px 0;
+}
+
+.duemilasedici {
+  margin-top: -120px;
 }
 
 .title {
